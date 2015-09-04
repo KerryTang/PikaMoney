@@ -1,0 +1,48 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             tools:context="com.pikamoney.app.fragment.ShoppingFragment">
+
+    <include layout="@layout/tab_shopping"
+             android:id="@+id/tab_shopping"
+             android:layout_width="wrap_content"
+             android:layout_height="40dp"
+             android:layout_marginTop="15dp"
+             android:layout_marginLeft="10dp"
+             android:layout_marginRight="5dp"/>
+
+    <ImageView
+            android:layout_width="300dp"
+            android:layout_height="200dp"
+            android:src="@drawable/img_ad_like_0"
+            android:id="@+id/imageView_shopping_ad_1"
+            android:layout_below="@id/tab_shopping"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"/>
+
+
+    <ImageView
+            android:layout_width="300dp"
+            android:layout_height="200dp"
+            android:src="@drawable/img_ad_like_1"
+            android:id="@+id/imageView_shopping_ad_2"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/imageView_shopping_ad_1"
+            android:layout_marginTop="20dp"/>
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/button_shopping_like_ad1"
+            android:layout_centerVertical="true"
+            android:layout_alignEnd="@+id/imageView_shopping_ad_1"
+            android:background="@drawable/button_go"/>
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/button_shopping_like_ad2"
+            android:layout_alignBottom="@+id/imageView_shopping_ad_2"
+            android:layout_alignStart="@+id/button_shopping_like_ad1"
+            android:background="@drawable/button_go"/>
+
+</RelativeLayout>

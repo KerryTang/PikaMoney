@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">>
+
+    <RadioGroup
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/radioGroup_shopping">
+
+        <RadioButton android:layout_width="0dp"
+                     android:layout_height="match_parent"
+                     android:id="@+id/radioButton_shopping_like"
+                     android:button="@android:color/transparent"
+                     android:background="@drawable/button_like"
+                     android:checked="true"
+                     android:layout_weight="1"/>
+
+        <RadioButton android:layout_width="0dp"
+                     android:layout_height="match_parent"
+                     android:id="@+id/radioButton_shopping_need"
+                     android:button="@android:color/transparent"
+                     android:background="@drawable/button_need"
+                     android:layout_weight="1"/>
+
+    </RadioGroup>
+
+
+</RelativeLayout>

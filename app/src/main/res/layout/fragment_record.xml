@@ -1,0 +1,48 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             tools:context="com.pikamoney.app.fragment.RecordFragment">
+
+    <include layout="@layout/tab_record"
+             android:layout_width="wrap_content"
+             android:layout_height="40dp"
+             android:layout_marginTop="15dp"
+             android:layout_marginLeft="10dp"
+             android:layout_marginRight="5dp"/>
+
+    <FrameLayout
+            android:id="@+id/camera_preview"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            />
+
+
+    <Button
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:id="@+id/button_record_voice"
+            android:background="@drawable/button_voice"
+            android:layout_centerInParent="true"
+            android:visibility="gone"/>
+
+
+    <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/imageView_record_result"
+            android:src="@drawable/img_photo_result"
+            android:layout_marginTop="70dp"
+            android:visibility="gone"/>
+
+    <ProgressBar
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/progressBar"
+            android:layout_below="@+id/camera_preview"
+            android:layout_centerHorizontal="true"
+            android:visibility="gone"/>
+
+
+</RelativeLayout>
